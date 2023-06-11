@@ -1,0 +1,161 @@
+
+
+.form-section {
+    font-family: $font-primary;
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+
+        to right,
+        $color-primary,
+        $color-primary-2
+    );
+    color: $color-primary;
+    position: relative;
+    overflow: hidden;
+
+    @include flexCentering;
+
+    .form-container {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        margin: 8rem 8rem;
+        padding: 4rem 4rem;
+        width: 50%;
+        height: 30rem;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-white, .9),
+            rgba(255, 255,255, .9)),
+            url("/images/business-couple.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+        border-radius: 5px;
+        box-shadow: 0 1rem 1.4rem rgba(#000000, .3);
+        backface-visibility: hidden;
+
+        .form-heading {
+
+            margin-bottom: 4rem;
+            text-align: center;
+            font-family: $font-primary;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all .8s;
+            background-image: linear-gradient(to right, 
+            $color-primary, 
+            $color-primary-2);
+            -webkit-background-clip: text;
+            color: transparent;
+        
+
+        &:hover {
+            transform: rotate(5deg) scale(1.1);
+        } 
+    }
+
+        label{
+            display: block;
+            margin: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        textarea {
+            width: 18rem;
+            height: 6rem;
+            border-style: none;
+            border-radius: 5px;
+            box-shadow: 0 1rem 1.4rem rgba(#000000, .3);      
+            font-size: 1.2rem;
+            font-weight: 400;
+            outline: none;
+            resize: none;
+            color: #4a4e67;
+
+            &:focus {
+                border-style: none;
+                border-bottom: 2px solid $color-secondary;              
+            }
+        }
+
+        input[type=email] {
+
+            width: 18rem;
+            height: 3rem;
+            color: #4a4e67;
+            background-color: $color-white;
+            box-shadow: 0 1rem 1.4rem rgba(#000000, .3);      
+            font-size: 1.2rem;
+            font-weight: 400;
+            outline: none;
+            border-style: none;
+            border-radius: 5px;
+            resize: none;
+
+            &:focus {
+                border-style: none;
+                border-bottom: 2px solid $color-secondary;
+                
+            }           
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 2rem 0;
+            width: 18rem;
+            height: 2.7rem;
+            background-color: $color-primary-2;
+            border-style: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 3px;
+            box-shadow: 0 1rem 1rem rgba(#000000, .3);
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }   
+}
+
+@media screen and (max-width:27rem){
+
+    .form-section {
+
+        .form-container {
+            height: 28rem;
+
+            .form-heading {
+                margin-bottom: 2rem;
+                font-size: 1.6rem;
+    
+            }
+
+            textarea {
+                
+                width: 16rem;
+                height: 6rem;
+                transform: translateX(-10%);
+            }
+
+            input[type=email] {
+
+                width: 16rem;
+                height: 3rem;
+                transform: translateX(-10%);
+            }   
+        }
+    }  
+}
+
+
+
+
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass-practice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <header class="container"> <!-- The entire main-page container -->
+
+        <!-- Building the navigation bar with logo and nav-links -->
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="images/logo.jpeg">
+                <h1 class="logo-text">SELLIT</h1>      
+            </div>
+          
+           
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="check()" ondblclick="uncheck()">
+            <div class="small-screen-nav-links" id="small-screen-nav-links">
+                <ul id="small-link">
+                    <li onclick="uncheck()"><a href="#">Home</a></li>
+                    <li onclick="uncheck()"><a href="#products">Products</a></li>
+                    <li onclick="uncheck()"><a href="#stories">Testimonials</a></li>
+                    <li onclick="uncheck()"><a href="#partners">Partners</a></li>
+                     
+                </ul>
+            </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#stories">Testimonials</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                     
+                </ul>
+            </div>
+                
+        </div>
+
+        <!-- Hero Section -->
+
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Sell <span>And Buy</span> From Home</h1>
+                <p class="details">
+                    Sell and Buy anything from the comfort of your home. 
+                    Start buying and selling goods without having to leave home.
+                    Making money by selling your goods has never been easier.
+                </p>
+                <div class="button">
+                    <button class="btn-primary"><a href="#">SELL NOW</a></button>
+                <button class="btn-secondary"><a href="#">BUY NOW</a></button>
+                </div>
+            </div>
+                
+            <div class="hero-image">
+                <img src="images/img.jpg">
+            </div>   
+        </div>
+    </header>
+
+    <section class="products" id="products">
+        <h1 class="products-heading">Browse through our Products</h1>
+        <div class="categories">
+            <div class="shoes">
+                <div class="product-container">
+                    <img src="images/sneaker-1.jpg" alt="" width="300px">
+                    <h3 class="price">45.99$</h3>
+                    <button><a href="#">BUY NOW</a></button>
+                </div>
+
+                <div class="product-container">
+                    <img src="images/sneaker-1.jpg" alt="" width="300px">
+                    <h3 class="price">35.99$</h3>
+                    <button><a href="#">BUY NOW</a></button>
+                </div>
+
+                <div class="product-container">
+                    <img src="images/sneaker-1.jpg" alt="" width="300px">
+                    <h3 class="price">54.99$</h3>
+                    <button class="product-btn"><a href="#">BUY NOW</a></button>
+                </div>
+            </div>
+
+            <div class="shirts">
+                <div class="product-container">
+                    <img src="images/black-shirt.jpg.avif" alt="" width="300px">
+                    <h3 class="price">25.99$</h3>
+                    <button><a href="#">BUY NOW</a></button>
+                </div>
+
+                <div class="product-container">
+                    <img src="images/black-shirt.jpg.avif" alt="" width="300px">
+                    <h3 class="price">35.99$</h3>
+                    <button><a href="#">BUY NOW</a></button>
+                </div>
+
+                <div class="product-container">
+                    <img src="images/black-shirt.jpg.avif" alt="" width="300px">
+                    <h3 class="price">45.99$</h3>
+                    <button><a href="#">BUY NOW</a></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="more-products">
+        <div class="more-container">
+            <img src="images/girl-green.jpg.avif" class="more-image">
+            <img src="images/simple-black.jpg.avif"class="more-image">
+            <img src="images/woman-bag.jpg.avif" class="more-image">
+            <img src="images/soulye.jpg" class="more-image">
+            <img src="images/graphic-tshirt.jpg" class="more-image">
+            <img src="images/mens.jpg.avif" alt="" class="more-image">
+            <img src="images/green-sofa.jpg.avif" class="more-image">
+            <img src="images/tv.jpg.avif" class="more-image">
+            <img src="images/school.jpg" class="more-image">
+            <img src="images/phone-screens.avif" class="more-image">
+            <img src="images/smartwatch-screen-digital-device_53876-96809.jpg.avif" class="more-image">
+            <img src="images/hanging.jpg.avif" class="more-image">
+        </div>
+    </section>
+
+    <!-- SEE WHAT PEOPLE ARE SAYING ABOUT US -->
+
+    <section class="stories" id="stories">
+        <h1 class="story-heading">What our customers are saying</h1>
+        <div class="story-container">
+            <div class="story story-1">
+                <div class="story-image">
+                    <img src="images/woman-hoodie.jpg" class="story-lady-image">
+                </div>
+
+                <div class="story-text">
+                    <h3> I love the freedom of selling things from home</h3>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt 
+                        temporibus earum, in consequuntur, facere culpa voluptas tempora,
+                        sequi odio impedit repellat explicabo temporibus earum, in consequuntur.
+                    </p>
+
+                    <h2> -Jessica Spady</h2>
+                </div>
+            </div>
+
+            <div class="story story-2">
+                <div class="story-image">
+                    <img src="images/businesswoman.jpg" class="story-lady-image">
+                </div>
+
+                <div class="story-text">
+                    <h3> Selling goods from home has never been easier</h3>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt 
+                        temporibus earum, in consequuntur, facere culpa voluptas tempora,
+                        sequi odio impedit repellat explicabo temporibus earum, in consequuntur.
+                    </p>
+
+                    <h2> -Monica McHall</h2>
+                </div>
+            </div>
+
+
+            <div class="story story-3">
+                <div class="story-image">
+                    <img src="images/smiling-asian-lady.jpg" class="story-lady-image">
+                </div>
+
+                <div class="story-text">
+                    <h3> Making money from used goods is just amazing</h3>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt 
+                        temporibus earum, in consequuntur, facere culpa voluptas tempora,
+                        sequi odio impedit repellat explicabo temporibus earum, in consequuntur.
+                    </p>
+
+                    <h2> -Anna Lee</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="story-btn">
+                <a href="#" class="story-btn__link"> Learn more &rAarr;</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="form-section">
+
+        <div class="form-container" data-tilt>
+            <h1 class="form-heading">Get in touch with us</h1>
+    
+            <form action="#" class="form">
+    
+                <label for="name">Email</label>
+                <input type="email"  placeholder="Enter your email address..." required>
+
+                <label for="name">Leave a message</label>
+                <textarea placeholder="Leave a message..." class="message-field"></textarea>
+                
+                <input type="submit" class="submit-btn">
+            
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="partners" id="partners">
+        <h1 class="partners__heading">Our Worlwide partners</h1>
+        <div class="partners__logos">
+            <img src="images/equinoX.png" class="partners__logos--images">
+            <img src="images/glycon.png" class="partners__logos--images">
+            <img src="images/logo-2.jpg.png" class="partners__logos--images">
+            <img src="images/startup-logo.jpg.avif" class="partners__logos--images">
+            <img src="images/upwork.jpeg" class="partners__logos--images">
+        </div>
+
+        
+
+    </section>
+
+    <footer class="footer">
+
+        
+        <div class="container">
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#stories">Testimonials</a></li>
+                    <li><a href="#">Partners</a></li>
+                     
+                </ul>
+            </div>
+
+            <div class="why-us">
+                <h3> Why work we us?</h3>
+                <p> We have built a reputation through the different first-rate services we have been providing dolor, sit amet consectetur adipisicing elit.</p>
+                
+            </div> 
+       
+            <div class="copyright">
+                <p>&copy; Copyright all rights reserved</p>
+                <h3>Lovenson BEAUCICOT</h3>
+            </div>
+            
+        </div>    
+    </footer>
+
+
+    <script type="text/javascript" src="./css/vanilla-tilt.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

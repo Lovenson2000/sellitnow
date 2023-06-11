@@ -1,0 +1,35 @@
+
+
+//----Mixins----
+
+@mixin btn ($bg-color) {
+    background-color: $bg-color;
+    border-radius: 3rem;
+    border-style: none;
+    width: 9rem;
+    margin-inline: 0.5rem;
+    height: 2.7rem;   
+}
+
+@mixin btn-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600; 
+}
+
+@mixin flexCentering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin small-align {
+    margin-block: 12rem;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
